@@ -3,7 +3,9 @@ import React from "react";
 const App = () => {
     return (
         <div>
-            App
+            <h1 className="text-3xl font-bold underline bg-black text-white md:hidden">
+                Hello world!
+            </h1>
         </div>
     );
 }
