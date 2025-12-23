@@ -5,18 +5,16 @@ import { styles } from './util/style';
 const App = () => {
     const {
         paddingX, 
-        paddingY, 
-        padding,
-        marginX,
-        marginY,
-        margin,
-        container
+        paddingY,
+        container,
+        flexCenter,
+        flexStart
     } = styles;
 
     return (
         <div className="bg-primary w-full overflow-hidden">
-            <div className={`${paddingX} ${paddingY} ${marginY}`}>
-                <div className={`${container}`}>
+            <div className={`${paddingX} ${paddingY} ${flexCenter}`}>
+                <div className={`${container} ${flexStart}`}>
                     <p className="text-white">
                         Navbar
                     </p>
