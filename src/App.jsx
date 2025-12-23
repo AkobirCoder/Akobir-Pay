@@ -1,11 +1,15 @@
 import React from "react";
 
+import { styles } from './util/style';
+
 const App = () => {
     return (
-        <div>
-            <h1 className="text-3xl font-bold underline bg-black font-montserrat text-lightWhite xs:block ss:hidden md:block">
-                Hello world!
-            </h1>
+        <div className="bg-primary w-full overflow-hidden">
+            <div className={`${styles.paddingX} py-5 `}>
+                <p className="text-white">
+                    Navbar
+                </p>
+            </div>
         </div>
     );
 }
