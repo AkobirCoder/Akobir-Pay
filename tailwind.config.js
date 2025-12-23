@@ -9,7 +9,10 @@ module.exports = {
                 lightWhite: 'rgba(255, 255, 255, 0.7)',
                 lightBlue: 'rgba(9, 151, 124, 0.1)',
             },
-            fontFamily: {},
+            fontFamily: {
+                montserrat: ['Montserrat', 'sans-serif'],
+                roboto: ['Roboto', 'sans-serif'],
+            },
         },
         screens: {
             xs: '480px',
