@@ -8,7 +8,6 @@ const Navbar = () => {
     return (
         <div className={`w-full py-6 ${styles.flexBetween} navbar`}>
             {/* Logo: */}
-            {/* <div className={`${styles.heading}`}>Logo</div> */}
             <img src={logo} alt="Logo" className='w-[150px] h-[45px] cursor-pointer' />
 
             {/* Navigation links: */}
@@ -22,9 +21,13 @@ const Navbar = () => {
                                     font-montserrat 
                                     font-normal 
                                     cursor-pointer 
-                                    text-[16px] 
+                                    text-[16px]
                                     text-white 
                                     ${index === navigationLinks.length - 1 ? 'mr-0' : 'mr-10'}
+                                    hover:
+                                        text-lightWhite 
+                                        transition-all 
+                                        duration-300
                                 `}
                             >
                                 {nav.title}
