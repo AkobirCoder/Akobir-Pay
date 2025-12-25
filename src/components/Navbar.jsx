@@ -24,10 +24,7 @@ const Navbar = () => {
                                     text-[16px]
                                     text-white 
                                     ${index === navigationLinks.length - 1 ? 'mr-0' : 'mr-10'}
-                                    hover:
-                                        text-lightWhite 
-                                        transition-all 
-                                        duration-300
+                                    hover:text-lightWhite transition-all duration-300
                                 `}
                             >
                                 {nav.title}
