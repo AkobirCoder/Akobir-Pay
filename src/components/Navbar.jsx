@@ -54,8 +54,26 @@ const Navbar = () => {
                 />
 
                 {/* Navigation links for mobile */}
-                <div className={`${!toggleNav ? 'hidden' : 'flex'} w-[50%] h-[100px] p-6 absolute top-[93px] right-0 left-[50%] bg-black sidebar `}>
-
+                <div 
+                    className={
+                        `${!toggleNav ? 'hidden' : 'flex'} 
+                        w-[50%] h-[100px] p-6 absolute top-[93px] right-0 left-[50%] bg-black 
+                        sidebar bg-gradient`
+                    }
+                >
+                    <ul className='list-none sm:hidden flex justify-start items-center flex-1 flex-col'>
+                        {
+                            navigationLinks.map((nav, index) => {
+                                return (
+                                    <li
+                                        key={nav.id}
+                                    >
+                                        {nav.title}
+                                    </li>
+                                );
+                            })
+                        }
+                    </ul>
                 </div>
             </div>
         </div>
