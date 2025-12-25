@@ -21,3 +21,7 @@
         transform: translateY(0px);
     }
 }
+
+.bg-gradient {
+    background: linear-gradient(to top, #fff -278%, #102662 -78%, #00040F 100%);
+}
