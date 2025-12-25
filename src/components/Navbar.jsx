@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { styles } from '../util/style';
 import { navigationLinks } from '../util/constants';
-import {Logo, MenuIcon} from '../assets/index';
+import {Logo, MenuIcon, CloseIcon} from '../assets/index';
 
 const Navbar = () => {
+    const [toggleNav, setToggleNav] = useState(false);
+
+    const toggleNavHandler = () => {
+        setToggleNav((prevState) => {
+            return !prevState;
+        })
+    }
+
     return (
         <div className={`w-full py-6 ${styles.flexBetween} navbar`}>
             {/* Logo: */}
@@ -34,9 +42,21 @@ const Navbar = () => {
                 }
             </ul>
 
-            {/* Navigation btn */}
+            {/* Navigation button */}
             <div className={'sm:hidden flex flex-1 justify-end items-center'}>
-                <img src={MenuIcon} alt="Menu icon" className='w-[35px] h-[35px]' />
+                <img 
+                    src={
+                        toggleNav ? CloseIcon : MenuIcon
+                    } 
+                    alt="Menu icon" 
+                    className='w-[30px] h-[30px] object-contain cursor-pointer'
+                    onClick={toggleNavHandler}
+                />
+
+                {/* Navigation links for mobile */}
+                <div className={`${!toggleNav ? 'hidden' : 'flex'} w-[50%] h-[100px] p-6 absolute top-[93px] right-0 left-[50%] bg-black sidebar `}>
+
+                </div>
             </div>
         </div>
     );
