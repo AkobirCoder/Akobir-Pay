@@ -80,14 +80,15 @@ const Navbar = () => {
                                             font-normal 
                                             px-2 py-4
                                             cursor-pointer 
-                                            text-[12px] 
-                                            text-white
+                                            text-[12px]
                                             border-b-2 border-transparent
+                                            ${activeNav === nav.id ? 'text-lightWhite' : 'text-white'}
                                             hover:text-lightWhite
                                             hover:border-b-green-500
-                                            transition-all
+                                            transition-colors
                                             duration-300
                                             `}
+                                        onClick={() => setActiveNav(nav.id)}
                                     >
                                         {nav.title}
                                     </li>
