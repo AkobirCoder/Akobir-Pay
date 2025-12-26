@@ -14,9 +14,9 @@ const Navbar = () => {
     }
 
     return (
-        <div className={`w-full py-6 ${styles.flexBetween} navbar`}>
+        <div className={`w-full sm:py-6 py-4 ${styles.flexBetween} navbar`}>
             {/* Logo: */}
-            <img src={Logo} alt="Logo" className='w-[150px] h-[45px] cursor-pointer' />
+            <img src={Logo} alt="Logo" className='sm:w-[150px] sm:h-[45px] w-[120px] h-[40px] cursor-pointer' />
 
             {/* Navigation links: */}
             <ul className='w-[50%] list-none sm:flex hidden flex-1 justify-end items-center'>
@@ -57,16 +57,17 @@ const Navbar = () => {
                 <div 
                     className={
                         `${!toggleNav ? 'hidden' : 'flex'} 
-                        w-[50%] h-[100px] p-6 absolute top-[93px] right-0 left-[50%] bg-black 
+                        w-full p-6 absolute top-[72px] right-0 bg-black 
                         sidebar bg-gradient`
                     }
                 >
-                    <ul className='list-none sm:hidden flex justify-start items-center flex-1 flex-col'>
+                    <ul className='list-none sm:hidden flex justify-center items-start flex-1'>
                         {
                             navigationLinks.map((nav, index) => {
                                 return (
                                     <li
                                         key={nav.id}
+                                        className={'font-montserrat font-normal cursor-pointer sm:text-[16px] text-[12px] text-white'}
                                     >
                                         {nav.title}
                                     </li>
