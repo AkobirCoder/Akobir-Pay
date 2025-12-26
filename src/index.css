@@ -33,3 +33,7 @@
 .bg-gradient {
     background: linear-gradient(to top, #fff -278%, #102662 -78%, #00040F 100%);
 }
+
+.bg-discount-gradient {
+    background: linear-gradient(130deg, #272727 0%, #00040F 100%);
+}
