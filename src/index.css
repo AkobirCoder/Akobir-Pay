@@ -14,7 +14,7 @@
 
 @keyframes slide-sidebar {
     from {
-        transform: translateY(100px);
+        transform: translateY(50px);
     }
 
     to {
