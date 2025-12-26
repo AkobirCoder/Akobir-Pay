@@ -1,7 +1,7 @@
 import React from "react";
 
 import { styles } from './util/style';
-import {Navbar} from './components/index';
+import {Home, Navbar} from './components/index';
 
 const App = () => {
     const {paddingX, container} = styles;
@@ -11,6 +11,7 @@ const App = () => {
             <div className={`${paddingX}`}>
                 <div className={`${container}`}>
                     <Navbar />
+                    <Home />
                 </div>
             </div>
         </div>
