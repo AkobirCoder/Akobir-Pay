@@ -10,13 +10,13 @@ const Navbar = () => {
     const toggleNavHandler = () => {
         setToggleNav((prevState) => {
             return !prevState;
-        })
+        });
     }
 
     return (
         <div className={`w-full sm:py-6 py-4 ${styles.flexBetween} navbar`}>
             {/* Logo: */}
-            <img src={Logo} alt="Logo" className='sm:w-[150px] sm:h-[45px] w-[120px] h-[40px] cursor-pointer' />
+            <img src={Logo} alt="Logo" className='sm:w-[150px] sm:h-[45px] w-[120px] h-[35px] cursor-pointer' />
 
             {/* Navigation links: */}
             <ul className='w-[50%] list-none sm:flex hidden flex-1 justify-end items-center'>
@@ -28,7 +28,7 @@ const Navbar = () => {
                                 className={`
                                     font-montserrat 
                                     font-normal 
-                                    cursor-pointer 
+                                    cursor-pointer
                                     text-[16px]
                                     text-white 
                                     ${index === navigationLinks.length - 1 ? 'mr-0' : 'mr-10'}
@@ -57,11 +57,11 @@ const Navbar = () => {
                 <div 
                     className={
                         `${!toggleNav ? 'hidden' : 'flex'} 
-                        w-full p-6 absolute top-[72px] right-0 bg-black 
+                        w-full px-2 absolute top-[67px] right-0
                         sidebar bg-gradient`
                     }
                 >
-                    <ul className='list-none flex justify-center items-start flex-1'>
+                    <ul className='list-none flex gap-1 justify-center items-start flex-1'>
                         {
                             navigationLinks.map((nav, index) => {
                                 return (
@@ -70,11 +70,17 @@ const Navbar = () => {
                                         className={`
                                             font-montserrat 
                                             font-normal 
-                                            p-1
+                                            px-2
+                                            py-4
                                             cursor-pointer 
                                             text-[12px] 
                                             text-white
-                                            hover:text-lightWhite transition-all duration-300
+                                            border-b-2
+                                            border-transparent
+                                            hover:text-lightWhite
+                                            hover:border-b-green-500
+                                            transition-all
+                                            duration-300
                                             `}
                                     >
                                         {nav.title}
