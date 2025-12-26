@@ -6,11 +6,16 @@ import {Logo, MenuIcon, CloseIcon} from '../assets/index';
 
 const Navbar = () => {
     const [toggleNav, setToggleNav] = useState(false);
+    const [activeNav, setActiveNav] = useState('home');
 
     const toggleNavHandler = () => {
         setToggleNav((prevState) => {
             return !prevState;
         });
+    }
+
+    const activeNavHandler = (id) => {
+        setActiveNav(id);
     }
 
     return (
@@ -30,10 +35,13 @@ const Navbar = () => {
                                     font-normal 
                                     cursor-pointer
                                     text-[16px]
-                                    text-white 
                                     ${index === navigationLinks.length - 1 ? 'mr-0' : 'mr-10'}
-                                    hover:text-lightWhite transition-all duration-300
+                                    ${activeNav === nav.id ? 'text-lightWhite' : 'text-white'}
+                                    hover:text-lightWhite 
+                                    transition-colors
+                                    duration-300
                                 `}
+                                onClick={() => activeNavHandler(nav.id)}
                             >
                                 {nav.title}
                             </li>
@@ -70,13 +78,11 @@ const Navbar = () => {
                                         className={`
                                             font-montserrat 
                                             font-normal 
-                                            px-2
-                                            py-4
+                                            px-2 py-4
                                             cursor-pointer 
                                             text-[12px] 
                                             text-white
-                                            border-b-2
-                                            border-transparent
+                                            border-b-2 border-transparent
                                             hover:text-lightWhite
                                             hover:border-b-green-500
                                             transition-all
