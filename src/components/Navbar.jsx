@@ -49,7 +49,7 @@ const Navbar = () => {
                         toggleNav ? CloseIcon : MenuIcon
                     } 
                     alt="Menu icon" 
-                    className='w-[30px] h-[30px] object-contain cursor-pointer'
+                    className='w-[25px] h-[25px] object-contain cursor-pointer'
                     onClick={toggleNavHandler}
                 />
 
@@ -61,13 +61,21 @@ const Navbar = () => {
                         sidebar bg-gradient`
                     }
                 >
-                    <ul className='list-none sm:hidden flex justify-center items-start flex-1'>
+                    <ul className='list-none flex justify-center items-start flex-1'>
                         {
                             navigationLinks.map((nav, index) => {
                                 return (
                                     <li
                                         key={nav.id}
-                                        className={'font-montserrat font-normal cursor-pointer sm:text-[16px] text-[12px] text-white'}
+                                        className={`
+                                            font-montserrat 
+                                            font-normal 
+                                            p-1
+                                            cursor-pointer 
+                                            text-[12px] 
+                                            text-white
+                                            hover:text-lightWhite transition-all duration-300
+                                            `}
                                     >
                                         {nav.title}
                                     </li>
