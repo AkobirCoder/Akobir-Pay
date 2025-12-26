@@ -9,6 +9,6 @@ export const styles = {
     flexCenter: 'flex justify-center items-center',
     flexStart: 'flex justify-start items-center',
     flexBetween: 'flex justify-between items-center',
-    paragraph: 'font-montserrat font-normal text-lightWhite text-[18px] text-justify leading-[30.8px]',
+    paragraph: 'font-montserrat font-normal text-lightWhite text-4 text-justify leading-[30.8px]',
     heading: 'font-montserrat font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-[50%]',
 }
