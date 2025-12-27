@@ -28,7 +28,11 @@ const Home = () => {
                     {/* --- Home section title --- */}
 
                     {/* --- Home section description --- */}
-                        <div className=''></div>
+                        <div className={`${styles.paragraph} mt-5 max-w-[550px]`}>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet assumenda tempora sed voluptates nostrum facilis rem molestiae, natus molestias similique.
+                            </p>
+                        </div>
                     {/* --- Home section description --- */}
 
                 </div>
