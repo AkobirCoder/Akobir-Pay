@@ -2,6 +2,7 @@ import React from 'react';
 
 import { styles } from '../util/style';
 import { DiscountIcon, HomeRobotImage } from '../assets';
+import {Button} from './index'
 
 const Home = () => {
     return (
@@ -41,7 +42,9 @@ const Home = () => {
                         </div>
                     {/* --- Home section description --- */}
 
-                    {/* --- Home section started button --- */}
+                    {/* --- Home section getting started button --- */}
+                        <Button />
+                    {/* --- Home section getting started button --- */}
 
                     {/* --- Home section gradient background --- */}
                         <div className='absolute z-[0] w-[40%] h-[35%] top-0 pink-gradient' />
