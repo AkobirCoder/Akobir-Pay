@@ -13,7 +13,7 @@ const Home = () => {
                             className={'flex flex-row items-center gap-1 py-[6px] px-4 rounded-[10px] mb-2 bg-lightWhite bg-discount-gradient'}
                         >
                             <img src={DiscountIcon} alt="Discount icon" className={'w-[30px] h-[30px]'} />
-                            <p className={`${styles.paragraph}`}>
+                            <p className={`${styles.paragraph} capitalize`}>
                                 <span className={'text-white'}>20%</span> chegirma <span className={'text-white'}>1 oylik</span> hisob uchun
                             </p>
                         </div>
@@ -21,8 +21,8 @@ const Home = () => {
 
                     {/* --- Home section title --- */}
                         <div className='w-full'>
-                            <h1 className={`${styles.heading}`}>
-                                Yangi avlod to'lov usuli
+                            <h1 className={`${styles.headingOne} capitalize`}>
+                                Yangi avlod <br /> <span className='text-gradient'>to'lov usuli</span>
                             </h1>
                         </div>
                     {/* --- Home section title --- */}
