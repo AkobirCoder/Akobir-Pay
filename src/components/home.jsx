@@ -41,11 +41,13 @@ const Home = () => {
                         </div>
                     {/* --- Home section description --- */}
 
-                    {/* Home section gradient background */}
+                    {/* --- Home section started button --- */}
+
+                    {/* --- Home section gradient background --- */}
                         <div className='absolute z-[0] w-[40%] h-[35%] top-0 pink-gradient' />
                         <div className='absolute z-[1] w-[80%] h-[80%] rounded-full bottom-40 white-gradient' />
                         <div className='absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue-gradient' />
-                    {/* Home section gradient background */}
+                    {/* --- Home section gradient background --- */}
                 </div>
             {/* --- Home section information --- */}
         </section>
