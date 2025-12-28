@@ -91,5 +91,5 @@
 .feature-card:hover {
     background: var(--black-gradient);
     box-shadow: var(--card-shodow);
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
