@@ -9,7 +9,7 @@ const Home = () => {
         <section id='home' className={`md:flex-row flex flex-col items-center ${styles.paddingY}`}>
             {/* --- Home section animation image --- */}
                 <div className={`flex-1 ${styles.flexStart} md:my-0 my-10`}>
-                    <img src={HomeRobotImage} alt="Home section Robot" className='w-[100%] h-[100%] relative z-10 rounded-2xl' />
+                    <img src={HomeRobotImage} alt="Home section Robot" className='w-[100%] h-[100%] relative z-10 rounded-xl' />
                 </div>
             {/* --- Home section animation image --- */}
 
@@ -17,7 +17,7 @@ const Home = () => {
                 <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 relative`}>
                     {/* --- Home section discount information --- */}
                         <div 
-                            className={'flex flex-row items-center gap-1 py-[6px] px-4 rounded-[10px] mb-2 bg-lightWhite bg-discount-gradient'}
+                            className={'flex flex-row items-center gap-1 py-[6px] px-4 rounded-xl mb-2 bg-lightWhite bg-discount-gradient'}
                         >
                             <img src={DiscountIcon} alt="Discount icon" className={'w-[30px] h-[30px]'} />
                             <p className={`${styles.paragraph} capitalize`}>
@@ -43,7 +43,7 @@ const Home = () => {
                     {/* --- Home section description --- */}
 
                     {/* --- Home section getting started button --- */}
-                        <Button />
+                        <Button styles={'mt-2'} />
                     {/* --- Home section getting started button --- */}
 
                     {/* --- Home section gradient background --- */}
