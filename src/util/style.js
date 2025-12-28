@@ -11,5 +11,13 @@ export const styles = {
     flexBetween: 'flex justify-between items-center',
     paragraph: 'font-montserrat font-normal text-lightWhite text-4 text-justify leading-[30.8px]',
     headingOne: 'font-montserrat font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100px] leading-[75px]',
-    headingTwo: 'font-montserrat font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-[50%]',
+    headingTwo: 'font-montserrat font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px]',
+}
+
+export const layout = {
+    section: `md:flex-row flex-col ${styles.paddingY} ${styles.flexCenter}`,
+    sectionReverse: `md:flex-row flex-col-reverse ${styles.paddingY} ${styles.flexCenter}`,
+    sectionInfo: `flex-1 ${styles.flexStart} flex-col`,
+    sectionImage: `flex-1 ${styles.flexCenter} md:ml-10 ml-0 relative`,
+    sectionImageReverse: `flex-1 ${styles.flexCenter} md:mr-10 mr-0 md:mt-0 mt-10 relative`,
 }
