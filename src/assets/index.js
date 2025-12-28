@@ -3,3 +3,7 @@ export {default as MenuIcon} from './menu.svg';
 export {default as CloseIcon} from './close.svg';
 export {default as DiscountIcon} from './discount.svg';
 export {default as HomeRobotImage} from './robot.png';
+export {default as CardImage} from './card.webp';
+export {default as BillingImage} from './bill.webp';
+export {default as GooglePlayImage} from './googleplay.png';
+export {default as AppStoreImage} from './appstore.png';
