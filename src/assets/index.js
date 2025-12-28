@@ -7,3 +7,6 @@ export {default as CardImage} from './card.webp';
 export {default as BillingImage} from './bill.webp';
 export {default as GooglePlayImage} from './googleplay.png';
 export {default as AppStoreImage} from './appstore.png';
+export {default as StarIcon} from './star.svg';
+export {default as ShieldIcon} from './shield.svg';
+export {default as SendIcon} from './send.svg';
