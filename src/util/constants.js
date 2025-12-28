@@ -1,3 +1,5 @@
+import { SendIcon, ShieldIcon, StarIcon } from "../assets";
+
 export const navigationLinks = [
     {
         id: 'home',
@@ -37,4 +39,25 @@ export const statistics = [
         title: 'Tranzaksiya',
         value: '110M+',
     },
+];
+
+export const services = [
+    {
+        id: 1,
+        icon: StarIcon,
+        title: "Mukofotlar",
+        content: "Eng yaxshi kredit kartalari aksiyalar va sovrinlarning ajoyib kombinatsiyasini taklif qiladi.",
+    },
+    {
+        id: 2,
+        icon: ShieldIcon,
+        title: "100% himoyalangan",
+        content: "Ma'lumotlaringiz va tranzaksiyalaringiz xavfsiz ekanligiga ishonch hosil qilish uchun faol choralar ko'ramiz.",
+    },
+    {
+        id: 3,
+        icon: SendIcon,
+        title: "Balansni o'tkazish",
+        content: "Balansni o'tkazish kredit kartasi sizga foizlarni to'lashda ko'p pul tejash imkonini beradi.",
+    }
 ];
