@@ -1,7 +1,7 @@
 import React from "react";
 
 import { styles } from './util/style';
-import {Home, Navbar, Statistics} from './components/index';
+import {Billing, Contract, Home, Navbar, Statistics} from './components/index';
 
 const App = () => {
     return (
@@ -27,6 +27,8 @@ const App = () => {
                 <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
                     <div className={`${styles.container}`}>
                         <Statistics />
+                        <Contract />
+                        <Billing />
                     </div>
                 </div>
             {/* --- Statistics section --- */}
