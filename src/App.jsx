@@ -1,21 +1,36 @@
 import React from "react";
 
 import { styles } from './util/style';
-import {Home, Navbar} from './components/index';
+import {Home, Navbar, Statistics} from './components/index';
 
 const App = () => {
     return (
         <div className="bg-primary w-full overflow-hidden">
-            <div className={`${styles.paddingX} ${styles.flexCenter} border-b-2 border-b-slate-700`}>
-                <div className={`${styles.container}`}>
-                    <Navbar />
+
+            {/* --- Navbar section --- */}
+                <div className={`${styles.paddingX} ${styles.flexStart} border-b-2 border-b-slate-700`}>
+                    <div className={`${styles.container}`}>
+                        <Navbar />
+                    </div>
                 </div>
-            </div>
-            <div className={`bg-primary ${styles.flexCenter}`}>
-                <div className={`${styles.container}`}>
-                    <Home />
+            {/* --- Navbar section --- */}
+
+            {/* --- Home section --- */}
+                <div className={`bg-primary ${styles.flexCenter}`}>
+                    <div className={`${styles.container}`}>
+                        <Home />
+                    </div>
                 </div>
-            </div>
+            {/* --- Home section --- */}
+
+            {/* --- Statistics section --- */}
+                <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+                    <div className={`${styles.container}`}>
+                        <Statistics />
+                    </div>
+                </div>
+            {/* --- Statistics section --- */}
+            
         </div>
     );
 }
