@@ -11,7 +11,9 @@ const Contract = () => {
                     Bir necha oson qadamda <br className='sm:block hidden' /> oson kontrakt tuzing
                 </h2>
                 <p className={`${styles.paragraph} max-w-[550px] mt-5`}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam recusandae cupiditate tempore velit facilis, optio quo repudiandae eos necessitatibus quidem!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Laboriosam recusandae cupiditate tempore velit facilis, 
+                    optio quo repudiandae eos necessitatibus quidem!
                 </p>
                 <Button styles={'mt-10'} />
                 <div className='absolute z-[0] w-[40%] h-[35%] top-0 pink-gradient' />
