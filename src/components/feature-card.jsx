@@ -8,7 +8,7 @@ const FeatureCard = ({icon, title, content, index}) => {
             flex flex-row items-center gap-2 
             rounded-[20px] cursor-pointer
             ${index === services.length - 1 ? 'mb-0 p-6' : 'mb-6 p-6'}
-            transition-all duration-500 ease-in
+            transition-all duration-200 ease-in
             feature-card
         `}>
             <div className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-lightBlue`}>
