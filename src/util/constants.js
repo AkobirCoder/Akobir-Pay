@@ -20,3 +20,21 @@ export const navigationLinks = [
         title: 'Aloqa',
     },
 ];
+
+export const statistics = [
+    {
+        id: 1,
+        title: 'Faol foydalanuvchilar',
+        value: '3900+',
+    },
+    {
+        id: 2,
+        title: 'Kompaniya homiyligida',
+        value: '100+',
+    },
+    {
+        id: 3,
+        title: 'Tranzaksiya',
+        value: '110M+',
+    },
+];
