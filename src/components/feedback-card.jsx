@@ -1,15 +1,19 @@
 import React from 'react';
 import { QuotesIcon } from '../assets';
 import { styles } from '../util/style';
+import { feedbacks } from '../util/constants';
 
 const FeedbackCard = ({content, name, title, index}) => {
     return (
         <div className={`
             flex justify-between flex-col 
+            cursor-pointer
             px-10 py-12
             rounded-[20px] 
             max-w-[370px] 
-            md:mr-10 sm:mr-5 mr-0 my-5
+            my-5
+            ${index === feedbacks.length - 1 ? 'mr-0' : 'md:mr-10 sm:mr-5 mr-0'}
+            feedback-card
         `}>
             <>
                 <img src={QuotesIcon} alt="QuotesIcon" className={'w-[42px] h-[27px] object-contain'} />
@@ -25,7 +29,13 @@ const FeedbackCard = ({content, name, title, index}) => {
                     bg-dark-gradient 
                     rounded-full
                 `}>
-                    <p className={'text-[22px] font-montserrat font-semibold text-gradient'}>AU</p>
+                    <p className={'text-[22px] font-montserrat font-semibold text-gradient'}>
+                        {
+                            name.split(' ').map((item) => {
+                                return item[0]
+                            }).join('').toUpperCase()
+                        }
+                    </p>
                 </div>
                 <div className={'flex flex-col ml-4'}>
                     <h4 className={'font-montserrat font-semibold text-[20px] leading-[32px] text-white'}>
