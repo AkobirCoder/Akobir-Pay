@@ -9,7 +9,8 @@
         144.39deg, 
         #fff -278.56%, 
         #6d6d6d -78.47%, 
-        #11101d 91.61%);
+        #11101d 91.61%
+    );
     --card-shodow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
 }
 
@@ -92,4 +93,17 @@
     background: var(--black-gradient);
     box-shadow: var(--card-shodow);
     transform: scale(1.05);
+}
+
+.box-shadow {
+    box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+
+.bg-dark-gradient {
+    background: linear-gradient(
+        -168.39deg,
+        #fff -278.56%, 
+        #6d6d6d -78.47%, 
+        #11101d 91.61%
+    );
 }
