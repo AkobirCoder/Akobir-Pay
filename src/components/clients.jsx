@@ -1,8 +1,9 @@
 import React from 'react';
+import { styles } from '../util/style';
 
 const Clients = () => {
     return (
-        <div>Clients</div>
+        <div className={`${styles.flexCenter} my-4`}>Clients</div>
     );
 }
 
