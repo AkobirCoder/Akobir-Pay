@@ -33,7 +33,7 @@ const Testimonials = () => {
                 {
                     feedbacks.map((feedback, index) => {
                         return (
-                            <FeedbackCard key={feedback.id} {...feedback} />
+                            <FeedbackCard key={feedback.id} {...feedback} index={index} />
                         );
                     })
                 }
