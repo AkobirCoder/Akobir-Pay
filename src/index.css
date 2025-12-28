@@ -107,3 +107,8 @@
         #11101d 91.61%
     );
 }
+
+.feedback-card:hover {
+    background: var(--black-gradient);
+    box-shadow: var(--card-shodow);
+}
