@@ -5,7 +5,7 @@ import Button from './button';
 
 const Contract = () => {
     return (
-        <section id='' className={`${layout.section}`}>
+        <section id='products' className={`${layout.section}`}>
             <div className={`${layout.sectionInfo} relative`}>
                 <h2 className={`${styles.headingTwo}`}>
                     Bir necha oson qadamda <br className='sm:block hidden' /> oson kontrakt tuzing
