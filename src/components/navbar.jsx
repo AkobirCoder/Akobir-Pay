@@ -44,7 +44,7 @@ const Navbar = () => {
                                     `}
                                     onClick={() => activeNavHandler(nav.id)}
                                 >
-                                    {nav.title}
+                                    <a href={`#${nav.id}`}>{nav.title}</a>
                                 </li>
                             );
                         })
