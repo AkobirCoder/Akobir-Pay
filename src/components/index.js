@@ -10,4 +10,5 @@ export {default as CTA} from './cta';
 export {default as Testimonials} from './testimonials';
 export {default as FeedbackCard} from './feedback-card';
 export {default as Clients} from './clients';
+export {default as ClientCard} from './client-card';
 export {default as Footer} from './footer';
