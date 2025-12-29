@@ -12,3 +12,4 @@ export {default as FeedbackCard} from './feedback-card';
 export {default as Clients} from './clients';
 export {default as ClientCard} from './client-card';
 export {default as Footer} from './footer';
+export {default as FooterLinkCard} from './footer-link-card';
