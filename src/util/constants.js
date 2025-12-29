@@ -101,3 +101,61 @@ export const clients = [
         logo: DropboxIcon,
     },
 ];
+
+export const footerLinks = [
+    {
+        title: 'Jamiyat',
+        links: [
+            {
+                name: 'Yordam markazi',
+                link: 'https://www.sammi.ac/help-center/',
+            },
+            {
+                name: 'Hamkorlar',
+                link: 'https://www.sammi.ac/partners/',
+            },
+            {
+                name: 'Takliflar',
+                link: 'https://www.sammi.ac/suggestions/',
+            },
+            {
+                name: 'Blog',
+                link: 'https://www.sammi.ac/blog/',
+            },
+            {
+                name: 'Yangiliklar',
+                link: 'https://www.sammi.ac/newsletters/',
+            },
+        ],
+    },
+    {
+        title: 'Foydali havola',
+        links: [
+            {
+                name: 'Kontent',
+                link: 'https://www.sammi.ac/content/',
+            },
+            {
+                name: 'Qanday ishlaydi',
+                link: 'https://www.sammi.ac/how-it-works/',
+            },
+            {
+                name: 'Shartlar & xizmatlar',
+                link: 'https://www.sammi.ac/terms-and-services/',
+            },
+        ],      
+    },
+    {
+        title: 'Hamkor',
+        links: [
+            {
+                name: 'Bizning hamkorimiz',
+                link: 'https://www.sammi.ac/our-partner/',
+            },
+            {
+                name: "Hamkor bo'ling",
+                link: 'https://www.sammi.ac/become-a-partner/',
+            }
+        ],
+    },
+];
