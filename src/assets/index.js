@@ -11,3 +11,7 @@ export {default as StarIcon} from './star.svg';
 export {default as ShieldIcon} from './shield.svg';
 export {default as SendIcon} from './send.svg';
 export {default as QuotesIcon} from './quotes.svg';
+export {default as AirbnbIcon} from './airbnb.svg';
+export {default as BinanceIcon} from './binance.svg';
+export {default as CoinbaseIcon} from './coinbase.svg';
+export {default as DropboxIcon} from './dropbox.svg';
