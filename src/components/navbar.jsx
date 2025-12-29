@@ -21,7 +21,9 @@ const Navbar = () => {
     return (
         <div className={`w-full sm:py-6 py-4 ${styles.flexBetween} navbar`}>
             {/* --- Logo --- */}
-                <img src={Logo} alt="Logo" className={'sm:w-[150px] sm:h-[45px] w-[120px] h-[35px] cursor-pointer'} />
+                <a href="/">
+                    <img src={Logo} alt="Logo" className={'sm:w-[150px] sm:h-[45px] w-[120px] h-[35px] cursor-pointer'} />
+                </a>
             {/* --- Logo --- */}
 
             {/* --- Navigation links --- */}
@@ -92,7 +94,7 @@ const Navbar = () => {
                                                     `}
                                                 onClick={() => setActiveNav(nav.id)}
                                             >
-                                                {nav.title}
+                                                <a href={`#${nav.id}`}>{nav.title}</a>
                                             </li>
                                         );
                                     })
