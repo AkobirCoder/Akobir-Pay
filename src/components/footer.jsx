@@ -6,7 +6,7 @@ import FooterLinkCard from './footer-link-card';
 
 const Footer = () => {
     return (
-        <div className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
+        <div id='contact' className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
             <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
                 <div className={'flex flex-1 flex-col justify-start mr-10'}>
                     <img src={Logo} alt="Logo" className={'w-[250px] h-[72px] object-contain'} />
