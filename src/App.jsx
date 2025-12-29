@@ -5,10 +5,10 @@ import {Billing, Business, Clients, Contract, CTA, Footer, Home, Navbar, Statist
 
 const App = () => {
     return (
-        <div className="bg-primary w-full overflow-hidden">
+        <div className="bg-primary w-full">
 
             {/* --- Navbar section --- */}
-                <div className={`${styles.paddingX} ${styles.flexStart} border-b-2 border-b-slate-700`}>
+                <div className={`${styles.paddingX} ${styles.flexStart} sticky top-0 left-0 right-0 z-[100] backdrop-blur-[8px] border-b-2 border-b-slate-700`}>
                     <div className={`${styles.container}`}>
                         <Navbar />
                     </div>
@@ -24,7 +24,7 @@ const App = () => {
             {/* --- Home section --- */}
 
             {/* --- Statistics section --- */}
-                <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+                <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter} overflow-hidden`}>
                     <div className={`${styles.container}`}>
                         <Statistics />
                         <Contract />
