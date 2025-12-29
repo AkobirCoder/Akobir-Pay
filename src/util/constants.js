@@ -1,4 +1,4 @@
-import { SendIcon, ShieldIcon, StarIcon } from "../assets";
+import { AirbnbIcon, BinanceIcon, CoinbaseIcon, DropboxIcon, SendIcon, ShieldIcon, StarIcon } from "../assets";
 
 export const navigationLinks = [
     {
@@ -81,4 +81,23 @@ export const feedbacks = [
         name: 'Kenn Gallagher',
         title: 'Founder & Leader',
     }
+];
+
+export const clients = [
+    {
+        id: 'client-1',
+        logo: AirbnbIcon,
+    },
+    {
+        id: 'client-2',
+        logo: BinanceIcon,
+    },
+    {
+        id: 'client-3',
+        logo: CoinbaseIcon,
+    },
+    {
+        id: 'client-4',
+        logo: DropboxIcon,
+    },
 ];
