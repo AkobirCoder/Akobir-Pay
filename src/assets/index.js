@@ -15,3 +15,7 @@ export {default as AirbnbIcon} from './airbnb.svg';
 export {default as BinanceIcon} from './binance.svg';
 export {default as CoinbaseIcon} from './coinbase.svg';
 export {default as DropboxIcon} from './dropbox.svg';
+export {default as InstagramIcon} from './instagram.svg';
+export {default as FacebookIcon} from './facebook.svg';
+export {default as TwitterIcon} from './twitter.svg';
+export {default as LinkedinIcon} from './linkedin.svg';
