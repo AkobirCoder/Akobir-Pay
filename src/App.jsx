@@ -23,7 +23,7 @@ const App = () => {
                 </div>
             {/* --- Home section --- */}
 
-            {/* --- Statistics section --- */}
+            {/* --- Main section --- */}
                 <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter} overflow-hidden`}>
                     <div className={`${styles.container}`}>
                         <Statistics />
@@ -36,7 +36,7 @@ const App = () => {
                         <Footer />
                     </div>
                 </div>
-            {/* --- Statistics section --- */}
+            {/* --- Main section --- */}
             
         </div>
     );
